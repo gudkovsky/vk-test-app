@@ -11,7 +11,7 @@ const roomData = [...floorData[0].rooms]
 
 export default function App() {
   const { register, handleSubmit } = useForm();
-  const [data, setData] = useState("");
+  const [data, setData] = useState('');
   const minDate = moment().format('YYYY-MM-DD')
 
   return (
