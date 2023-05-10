@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/vk-test-app/static/css/main.cb00bb2e.css",
+    "main.js": "/vk-test-app/static/js/main.a460e6f6.js",
+    "index.html": "/vk-test-app/index.html",
+    "main.cb00bb2e.css.map": "/vk-test-app/static/css/main.cb00bb2e.css.map",
+    "main.a460e6f6.js.map": "/vk-test-app/static/js/main.a460e6f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb00bb2e.css",
+    "static/js/main.a460e6f6.js"
+  ]
+}
