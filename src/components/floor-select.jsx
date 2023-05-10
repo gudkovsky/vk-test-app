@@ -7,7 +7,7 @@ export default function FloorSelect ({
 
   return (
     <>
-      <option value={`floor ${floor} `}>Этаж {floor} </option>
+      <option value={`${floor}`} >Этаж {floor} </option>
       {/* добавить генератор этажей */}
     </>
   )

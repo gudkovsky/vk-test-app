@@ -41,13 +41,8 @@ img {
 }
 
 .form {
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
-}
-
-.p {
-  color: #bf1650;
-  text-align: center;
 }
 
 textarea,
@@ -81,7 +76,7 @@ section > label {
 input[type="submit"],
 .button {
   position: relative;
-  background: #ec5990;
+  background: #0073F7;
   color: white;
   text-transform: uppercase;
   border: none;
@@ -99,10 +94,6 @@ input[type="submit"],
   transition: 0.3s all;
 }
 
-.buttonBlack {
-  background: black;
-  border: 1px solid white;
-}
 
 .App {
   max-width: 600px;
@@ -139,7 +130,7 @@ button[type="button"] {
 
 input[type="submit"]:hover,
 button[type="button"]:hover {
-  background: #bf1650;
+  background: #005fcc;
   color: white;
 }
 
@@ -157,9 +148,13 @@ input[type="submit"]:active {
   opacity: 1;
 }
 
+input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+}
+
 input[type="reset"] {
   position: relative;
-  background: #5800b6;
+  background: hsl(244, 100%, 26%);
   color: white;
   text-transform: uppercase;
   border: none;
@@ -178,7 +173,7 @@ input[type="reset"] {
 }
 
 input[type="reset"]:hover {
-  background: #070092;
+  background: #840b0b;
   color: white;
 }
 
