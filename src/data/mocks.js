@@ -53,4 +53,3 @@ const createDataArray = () => {
     }
   }
   createDataArray()
-  console.log(data)

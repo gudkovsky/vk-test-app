@@ -2,8 +2,9 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import moment from 'moment';
 import Header from "./header";
+import FloorSelect from './components/floor-select.jsx'
 
-import { data } from './data/mocks.js'
+import { data as floorData } from './data/mocks.js'
 
 export default function App() {
   const { register, handleSubmit, formState: { errors } } = useForm();
@@ -20,8 +21,7 @@ export default function App() {
   //     evt.target.setCustomValidity('')
   //   }
   // }как сделать выбор времени от и до js
-
-
+  console.log(floorData)
 
   return (
     <form onSubmit={handleSubmit((data) => setData(JSON.stringify(data)))}>
@@ -33,8 +33,9 @@ export default function App() {
       </select>
       <select {...register("floor", { required: true })}>
       <option value="" disabled selected  hidden> Выберите этаж </option>
-        <option value="3 floor">Этаж 3</option>
-        <option value="4 floor">Этаж 4</option> 
+      {floorData.map((floor) => (
+               <FloorSelect {...floor}/>
+              ))}
         {/* добавить генератор этажей */}
       </select>
       <select {...register("room", { required: true })}>

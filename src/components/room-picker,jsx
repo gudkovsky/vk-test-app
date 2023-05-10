@@ -1,13 +1,13 @@
 import React from "react";
 
 
-export default function FloorSelect ({
-  floor
+export default function RoomSelect ({
+  room
 }) {
 
   return (
     <>
-      <option value={`floor ${floor} `}>Этаж {floor} </option>
+      <option value={`room ${room} `}>Комната {room} </option>
       {/* добавить генератор этажей */}
     </>
   )
